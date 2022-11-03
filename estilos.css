@@ -1,0 +1,348 @@
+body{
+    background: -webkit-linear-gradient(to right, #ada4ad, #52a49f);
+    background: linear-gradient(to right, #ada4ad, #52a49f);
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+    font-family: fantasy;
+    color: rgb(16, 59, 128);
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+}
+
+section.contacto{
+    text-align: right;
+    margin-right: 500px;
+}
+ p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+ }
+ .div .parent{
+    padding: 700px;
+    text-align: center;
+ }
+.parent {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    text-align: center;
+   
+    }
+    
+    .div1 { grid-area: 1 / 2 / 2 / 3; }
+    .div2 { grid-area: 1 / 1 / 2 / 2; }
+.div2 p{
+    text-align: justify;
+    color: rgb(7, 7, 7);
+    padding: 10px;
+    margin: 10px;
+    margin-top: 200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.div1 img{
+    margin: 200px;
+    height: 400px;
+    width: 350px;
+    border-radius: 100%;
+}
+.fam_2{
+    text-align: justify;
+    color: rgb(7, 7, 7);
+    margin: 150px;
+    padding:50px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.fam_1 img{
+    float: left;
+    width: 250px;
+        height: 250px;
+        margin: 5px;
+        border-radius: 150px;
+    margin: 15px;
+        
+    }
+.fam_12 img{
+    float: left;
+    width: 250px;
+        height: 250px;
+        margin: 5px;
+        border-radius: 150px;
+    margin: 15px;
+}
+.fam_13 img{
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 150px;
+    margin: 15px;
+}
+
+.titulo_fam{
+    padding: 5%;
+}
+.estudios{
+    padding: auto;
+}
+/*HEADER SUPERIOR*/
+
+.header__superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*BARRA MENU*/
+
+.container__menu{
+    width: 100%;
+    height: 70px;
+    background: #023877;
+    padding: 0px 20px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li:first-child > a{
+    background-image: url(img/house-solid.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav > ul > li:first-child:hover > a{
+    background-image: url(img/house-solid.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#selected{
+    transform: scale(1.1);
+    background-color: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+html{
+    scroll-behavior: smooth;
+}
+.section .present
+{
+    flex-direction: column;
+    background-color: #023877;
+    position: fixed;
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 0px;
+    transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*ELEMENTOS RESPONSIVOS*/
+
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+
+@media screen and (max-width: 720px){
+
+    .search input{
+        display: none;
+    }
+    
+    .header__superior{
+        padding: 3px;
+    }
+
+
+
+    nav > ul{
+        flex-direction: column;
+        background-color: #023877;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+    
+section .estudio{
+    padding: 20px;
+    margin: auto;
+}
+
+.amigoss .div_2{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+section div .familia{
+    border-radius: 1200px;
+}.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    }
+    
+    .div_1 { grid-area: 1 / 1 / 2 / 5; }
+    .amigoss .div2 { grid-area: 2 / 1 / 3 / 2;}
+    .amigoss .div2 img{
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+    border-radius: 150px;
+    
+   
+    }
+    .amigoss .div3 { grid-area: 2 / 2 / 3 / 3; }
+    .amigoss .div3 img{
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+        border-radius: 150px;
+        float: inline-start;
+        
+        
+        }
+    .amigoss.div4 { grid-area: 2 / 3 / 3 / 4;}
+    .amigoss .div4 img{
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+        border-radius: 150px;
+       
+        
+        }
+    .amigoss.div5 { grid-area: 2 / 4 / 3 / 5;}
+    .amigoss .div5 img{
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+        border-radius: 150px;
+        
+         
+        }
+    .div6 { grid-area: 3 / 1 / 4 / 2; }
+    .div7 { grid-area: 3 / 2 / 4 / 3; }
+    .div8 { grid-area: 3 / 3 / 4 / 4; }
+    .div9 { grid-area: 3 / 4 / 4 / 5; }
+
+
+    /*ESTUDIOS*/
+    .padre {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        }
+        
+       .padre .div1 { grid-area: 1 / 1 / 2 / 4; }
+       .padre.div2 { grid-area: 2 / 1 / 3 / 2; }
+       .padre .div3 { grid-area: 2 / 2 / 3 / 3; }
+       .padre .div4 { grid-area: 2 / 3 / 3 / 4; }
+       .padre .div5 { grid-area: 3 / 1 / 4 / 2; }
+       .padre .div6 { grid-area: 3 / 2 / 4 / 3; }
+       .padre.div7 { grid-area: 3 / 3 / 4 / 4; }
+
+       .padre i {
+        font-size: 100px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+
+       }
